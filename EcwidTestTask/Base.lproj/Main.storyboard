@@ -162,19 +162,19 @@
                                                 <rect key="frame" x="48" y="86" width="313" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите количество товара" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FwM-b0-wfY">
                                                 <rect key="frame" x="48" y="173" width="313" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите цену товар" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-PX-qmq">
                                                 <rect key="frame" x="48" y="260" width="313" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e49-1e-TOJ">
                                                 <rect key="frame" x="48" y="420" width="313" height="66"/>
@@ -264,6 +264,7 @@
                         <outlet property="priceTextField" destination="S0B-PX-qmq" id="gVq-ay-nXQ"/>
                         <outlet property="productNameTextField" destination="IqJ-xJ-kdl" id="Qh1-ea-oPa"/>
                         <outlet property="quantityTextField" destination="FwM-b0-wfY" id="Rv5-Ey-bhM"/>
+                        <outlet property="scrollView" destination="1wR-i4-Amd" id="60q-Wt-G93"/>
                         <outlet property="selectedImageButton" destination="7UE-3n-YEQ" id="DNn-Tc-JW8"/>
                         <outlet property="smallImage" destination="upg-8V-aeC" id="Ztt-YB-Vci"/>
                     </connections>

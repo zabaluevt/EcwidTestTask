@@ -16,16 +16,19 @@ class ProductDescriptionViewController: UIViewController {
     @IBOutlet weak var productPrice: UILabel!
     
     var name = ""
-    var quantity: UInt = 0
-    var price: Double = 0.0
-    var image: UIImage?
+    var quantity: Int = 0
+    var price: Double = 0
+    var imageData: Data?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         productName?.text =  name
         productQuantity?.text = "Количество: " + String(quantity)
         productPrice?.text = "Цена: " + String(price)
-        productImage?.image = image
+        if let _ = imageData{
+            productImage?.image = UIImage(data: imageData!)!
+        }
     }
 }
 

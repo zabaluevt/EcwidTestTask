@@ -15,10 +15,10 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var productQuantity: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     
-    func commonInit(name: String, quantity: UInt, price: Double, image: UIImage?) {
+    func commonInit(name: String, quantity: Int, price: Double, imageData: Data?) {
         productName.text = name
         productQuantity.text = "Количество: " + String(quantity)
         productPrice.text = String(price) + " ₽"
-        productImage.image = image != nil ? image :UIImage(named: "NoImage.png")
+        productImage.image = imageData != nil ? UIImage(data: imageData!) : UIImage(named: "NoImage.png")
     }
 }

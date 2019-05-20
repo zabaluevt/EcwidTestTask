@@ -9,8 +9,10 @@
 import UIKit
 
 class SplitViewController: UISplitViewController, UISplitViewControllerDelegate {
+    static let shared = SplitViewController()
     override func viewDidLoad() {
         self.delegate = self
+        //Отображаем два контроллера для планшета
         self.preferredDisplayMode = .allVisible
     }
     
