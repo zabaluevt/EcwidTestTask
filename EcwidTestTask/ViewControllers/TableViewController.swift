@@ -57,7 +57,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate  {
             vc.price = products![indexPath.row].price
             vc.imageData = products![indexPath.row].imageData
         }
-        else{
+        else {
             vc.name = searchedProducts[indexPath.row].name
             vc.quantity = searchedProducts[indexPath.row].quantity
             vc.price = searchedProducts[indexPath.row].price
@@ -74,7 +74,6 @@ class TableViewController: UITableViewController, UISearchBarDelegate  {
         return true
     }
   
-    
     //Меняем стандартыне всплывающие кнопки
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         editingCellIndex = indexPath.row
@@ -129,6 +128,8 @@ class TableViewController: UITableViewController, UISearchBarDelegate  {
         }
         
         DispatchQueue.global(qos: .userInitiated).sync(execute: workItem)
+        
+        hideDetailVC()
         
         workItem.notify(queue: .main, execute: {
             if self.searchBar.text != "" {
